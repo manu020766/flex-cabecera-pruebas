@@ -3,11 +3,14 @@ body {
     background: lightblue;
 
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: #555;
     height: 100%;
     line-height: 1.5;
 }
+
+a { text-decoration: none; }
+
 .container {
     margin: 25px auto;
     background: #fff;
@@ -40,11 +43,12 @@ header {
 .nombre h1 {
     background-color: gainsboro;
     max-width: 100%;
-    font-size: 2.1em;
+    font-size: 1.75rem;
     color: #2c5d9f;
     text-align: right;
     margin: 0;
     font-weight: bold;
+    padding: 0 0.3rem;
 }
 
 
@@ -58,7 +62,7 @@ header {
 
 .direccion > p {
     background-color: yellow;
-    font-size: 1.2em;
+    font-size: 1rem;
     font-weight: bold;
 }
 #info {
@@ -74,7 +78,7 @@ header {
     color: orange;
     word-spacing: 2px;
     letter-spacing: 1px;
-    font-size: 1.8em;
+    font-size: 1.3rem;
     font-weight: bold;
     font-family: 'Merienda', cursive;
     background-color: lightblue;
@@ -84,7 +88,7 @@ header {
 /*--- migas de pan e idiomas - Inicio -------*/
 #migas {
         font-family: Verdana, Arial ;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         font-weight: bold;
     
         text-align:left;
@@ -93,7 +97,7 @@ header {
     
 #migas ul{
     list-style: none;
-    margin: 0.50em 0;
+    margin: 0.50rem 0;
     padding: 0;
     float: right;
 }
@@ -103,33 +107,61 @@ header {
     float:left;
 }
     
-#migas ul li a {text-decoration: none; display:block;}
+#migas ul li a {display:block;}
 
 
-@media (max-width: 420px) {
+ul.menuPrincipal1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 0 1rem;
+    font-weight: bold;
+    background-color: #2c5d9f;
+    margin-top: 0;
+}
+ul.menuPrincipal1 li a {
+    color: white;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 767px) {
     .direccionLema {
         justify-content: space-around;
     }
     #migas {
         margin: 0 auto;
-        font-size: 1.1em;
+        font-size: 1.1rem;
     }
     #migas ul {
         float: none;
      }
+     ul.menuPrincipal1 {
+         flex-direction: column;
+         text-align: center;
+     }
+     ul.menuPrincipal1 li {
+        padding: 0.4rem 0;
+    }
+}
+@media (max-width: 769px) {
+    ul.menuPrincipal1 li a {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 770px) {
     .nombre h1 {
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
     .direccion > p {
-        font-size: 1em;
+        font-size: 1rem;
     }
     .lema > p {
         letter-spacing: 0;
         word-spacing: 0;
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
     .datosEmpresa { 
         padding: 5px;
@@ -141,15 +173,15 @@ header {
 
 @media (min-width: 771px) and (max-width: 930px) {
     .nombre h1 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     .direccion > p {
-        font-size: 1em;
+        font-size: 1rem;
     }
     .lema > p {
         letter-spacing: 0;
         word-spacing: 0;
-        font-size: 1.25em;
+        font-size: 1.25rem;
     }
     .datosEmpresa { 
         padding: 10px;
