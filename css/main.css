@@ -43,7 +43,7 @@ header {
 .nombre h1 {
     background-color: gainsboro;
     max-width: 100%;
-    font-size: 1.75rem;
+    font-size: 1.60rem;
     color: #2c5d9f;
     text-align: right;
     margin: 0;
@@ -132,7 +132,7 @@ ul.menuPrincipal1 li a {
     }
     #migas {
         margin: 0 auto;
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
     #migas ul {
         float: none;
@@ -147,21 +147,26 @@ ul.menuPrincipal1 li a {
 }
 @media (max-width: 769px) {
     ul.menuPrincipal1 li a {
-        font-size: 0.9rem;
+        font-size: 0.84rem;
+    }
+    #migas {
+        padding: 0;
+        font-size: 0.80rem;
+        float: right;
     }
 }
 
 @media (max-width: 770px) {
     .nombre h1 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     .direccion > p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .lema > p {
         letter-spacing: 0;
         word-spacing: 0;
-        font-size: 1.3rem;
+        font-size: 0.8rem;
     }
     .datosEmpresa { 
         padding: 5px;
