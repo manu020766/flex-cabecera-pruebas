@@ -1,13 +1,166 @@
+
 body {
     background: lightblue;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #555;
+    height: 100%;
+    line-height: 1.5;
 }
 .container {
-    margin: 0 auto;
+    margin: 25px auto;
     background: #fff;
     max-width: 1066px;
     border-radius: 15px;
     box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
 }
-/* .logo>img {
-    width: 100%;
-} */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background-color: bisque;
+    border-radius: 15px;
+    /* padding: 20px 0 0 15px; */
+}
+
+.logo>img {
+    padding: 10px;
+}
+
+.datosEmpresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    }
+
+.nombre h1 {
+    background-color: gainsboro;
+    max-width: 100%;
+    font-size: 2.1em;
+    color: #2c5d9f;
+    text-align: right;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+
+.direccionLema {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.direccion > p {
+    background-color: yellow;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#info {
+    margin-left: 5px;
+    float: none;
+    display: inline;
+    padding: 0;
+    vertical-align: middle;
+}
+
+
+.lema > p {
+    color: orange;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Merienda', cursive;
+    background-color: lightblue;
+
+}
+
+/*--- migas de pan e idiomas - Inicio -------*/
+#migas {
+        font-family: Verdana, Arial ;
+        font-size: 1.2em;
+        font-weight: bold;
+    
+        text-align:left;
+        margin-top: -15px;
+    }
+    
+#migas ul{
+    list-style: none;
+    margin: 0.50em 0;
+    padding: 0;
+    float: right;
+}
+#migas ul li{
+    padding:0;
+    padding-right: 20px;
+    float:left;
+}
+    
+#migas ul li a {text-decoration: none; display:block;}
+
+
+@media (max-width: 420px) {
+    .direccionLema {
+        justify-content: space-around;
+    }
+    #migas {
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+    #migas ul {
+        float: none;
+     }
+}
+
+@media (max-width: 770px) {
+    .nombre h1 {
+        font-size: 1.4em;
+    }
+    .direccion > p {
+        font-size: 1em;
+    }
+    .lema > p {
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-size: 1.3em;
+    }
+    .datosEmpresa { 
+        padding: 5px;
+    }
+    .logo>img {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 930px) {
+    .nombre h1 {
+        font-size: 1.5em;
+    }
+    .direccion > p {
+        font-size: 1em;
+    }
+    .lema > p {
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-size: 1.25em;
+    }
+    .datosEmpresa { 
+        padding: 10px;
+    }
+    .logo>img {
+        padding: 5px;
+    }
+}
+
+@media  (max-width: 1095px) {
+    .container {
+        max-width: 96%;
+    }
+}
